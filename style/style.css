@@ -1,0 +1,83 @@
+body{
+  font-family: open-sans;
+  color: #666666 !important;
+}
+.header{
+  font-weight: 100;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  margin: 20px 0;
+  margin-bottom: 50px;
+  font-family: lato;
+  letter-spacing: 4px;
+}
+.title-name{
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+}
+.prod-image{
+  /* width: 100% */
+}
+.cart-product label{
+  display: block !important;
+  margin: 0;
+}
+.help-line label{
+  display: block !important;
+  margin: 0;
+}
+.help-line div, .order-details div {
+  margin-bottom: 15px;
+}
+.help-line div:first-child{
+  font-weight: 900;
+}
+.help-line label a{
+  text-decoration: underline !important;
+}
+.title{
+  text-transform: uppercase;
+}
+.action-buttons{
+  margin-top: 40px;
+}
+.action-buttons a:after{
+  margin: 0 10px;
+  content: "|"
+}
+.thick-line{
+  border: none; 
+  height: 5px;
+  color: #ddd; /* old IE */
+  background-color: #ddd; /* Modern Browsers */
+}
+.order-summary {
+  margin-top: 60px;
+}
+
+.modal-dialog{
+  width: 400px;
+  margin: 175px auto !important;
+  outline: 0;
+}
+
+.modal-body{
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.modal-header{
+  border: none;
+  padding: 5px 8px 8px 8px;
+}
+
+.modal-footer{
+  border: none;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 40px;
+    
+}

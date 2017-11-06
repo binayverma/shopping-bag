@@ -30,7 +30,7 @@ export default class ProductRowComponent extends Component{
       <div className="col-md-1">
         <label>
           {cart.c_currency}
-          {parseInt(cart.p_price).toFixed(2)}
+          {parseInt(cart.p_price * cart.p_quantity).toFixed(2)}
         </label>
       </div>
     </div>

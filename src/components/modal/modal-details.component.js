@@ -10,9 +10,6 @@ class ModalDetailsComponent extends Component{
     quanity: 0
   }
   updateCart(id, s, q){
-    console.log('id:', id);
-    console.log('size:', s);
-    console.log('quanity:', q);
     this.props.hideModal();
     this.props.updateShoppingBag(id, s, q);
   }
@@ -33,37 +30,53 @@ class ModalDetailsComponent extends Component{
       return null;
     }
     const { cart } = this.props;
+    console.log(cart);
     const sizes = cart.p_available_options.sizes;
+    const colors = cart.p_available_options.colors;
     const sizeValue = this.state.size ? this.state.size : cart.p_selected_size.code;
     const quantity = this.state.quanity;
     return(
-      <div className="container product-details row">
+      <div className="container product-modal row">
         <div className="col-md-6">
-        <label className="title-name">{cart.p_variation} {cart.p_name}</label>
-          <label>
-            {cart.c_currency}
-            {parseInt(cart.p_price).toFixed(2)}
-          </label>
-          Size:
-          <select className="form-control" value={sizeValue} ref="size" onChange={this.updateSize.bind(this)}>
-            {
-              sizes.map(size => (
-                <option key={size.code}>{size.name}</option>
-              ))
-            }
-          </select>
-          <br/>
-          Quantity:
-          <select className="form-control" value={quantity} ref="quant" onChange = {this.updateQuantity.bind(this)}>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-          </select>
-          <br/>
-          <br/>
-          <button className="btn btn-primary" onClick={() => { this.updateCart(cart.p_id, sizeValue, quantity) }}>Edit</button>
+
+        <hr className="thick-line"/>
+          <div className="container left">
+          <label className="title-name">{cart.p_variation} {cart.p_name}</label>
+            <label className="price">
+              {cart.c_currency}
+              {parseInt(cart.p_price).toFixed(2)}
+            </label>
+            <label className="title">{cart.p_variation}</label>
+                {
+                  colors.map(color => (
+                    <div key={color.name} style={{background: color.hexcode}} className="color-box"></div>
+                  ))
+                }
+            <div className="row">
+              <div className="col-md-6">
+              Size:
+              <select className="form-control" value={sizeValue} onChange={this.updateSize.bind(this)}>
+                {
+                  sizes.map(size => (
+                    <option key={size.name}>{size.code}</option>
+                  ))
+                }
+              </select>
+              </div>
+              <div className="col-md-6">
+              Quantity:
+              <select className="form-control" value={quantity} onChange={this.updateQuantity.bind(this)}>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+              </select>
+              </div>
+            </div>
+            <button className="btn btn-primary title" onClick={() => { this.updateCart(cart.p_id, sizeValue, quantity) }}>Edit</button>
+            <label><a>See product details</a></label>
+          </div>
         </div>
-        <div className="col-md-6">
+        <div className="col-md-6 right">
           <img src={`../../../assests/images/T${cart.p_id}.jpg`} />
         </div>
       </div>

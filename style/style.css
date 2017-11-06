@@ -20,9 +20,34 @@ body{
 .prod-image{
   /* width: 100% */
 }
-.cart-product label, .product-details label{
+.cart-product label, .product-modal  label{
   display: block !important;
   margin: 0;
+}
+.product-modal .left{
+  /* margin: 30px 0;s */
+  width: 80%;
+  margin: 0 auto;
+}
+.product-modal .price {
+  font-size: 48px;
+  margin-bottom: 30px ;
+}
+.product-modal img{
+  margin-top: 20%;
+  min-width: 50%;
+
+}
+.product-modal button {
+  width: 100%;
+  margin: 25px 0;
+}
+.product-modal div.color-box{
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin: 4px;
+  border: 1px solid #ddd;
 }
 .help-line label{
   display: block !important;
@@ -34,7 +59,9 @@ body{
 .help-line div:first-child{
   font-weight: 900;
 }
-.help-line label a{
+.help-line a,
+.order-summary a,
+.product-modal a{
   text-decoration: underline !important;
 }
 .title{
@@ -58,7 +85,7 @@ body{
 }
 
 .modal-dialog{
-  width: 70% !important;
+  width: 60% !important;
   margin: 175px auto !important;
   outline: 0;
   max-width: 60% !important;

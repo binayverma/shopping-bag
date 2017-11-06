@@ -60,10 +60,30 @@ class ShoppingBag extends Component {
   }
 
   render() {
-    const { propId, data, isModalOpen } = this.state;
+    const { propId, data, isModalOpen, carts, itemCount } = this.state;
+    if(!carts.data){
+      return null;
+    }
+    const cart = carts.data.productsInCart;
 
     return (
       <div>
+        <h3 className="header">Shopping Bag</h3>
+        <hr/>
+        <ProductHeaderComponent itemCount={cart.length}/>
+        <hr className="thick-line"/>
+        <div className="product-row">
+          <ul className="list-group">
+            {this.renderPosts()}
+          </ul>
+        </div>
+        <hr className="thick-line"/>
+        <div className="order-summary row">
+          <HelpLineComponent />
+          <OrderDetailsComponent cart={cart}/>
+        </div>
+        <FooterComponent />
+        <br/><br/>
         <Modal isOpen={isModalOpen} onRequestHide={this.hideModal.bind(this)}>
           <ModalHeader>
             <ModalClose onClick={this.hideModal.bind(this)} />
@@ -74,22 +94,6 @@ class ShoppingBag extends Component {
           <ModalFooter>
           </ModalFooter>
         </Modal>
-        <h3 className="header">Shopping Bag</h3>
-        <hr/>
-        <ProductHeaderComponent />
-        <hr className="thick-line"/>
-        <div className="product-row">
-          <ul className="list-group">
-            {this.renderPosts()}
-          </ul>
-        </div>
-        <hr className="thick-line"/>
-        <div className="order-summary row">
-          <HelpLineComponent />
-          <OrderDetailsComponent />
-        </div>
-        <FooterComponent />
-        <br/><br/>
       </div>
     );
   }

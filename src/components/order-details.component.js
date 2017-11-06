@@ -1,22 +1,25 @@
 import React, { Component } from "react";
+import { calcSubTotal, discountTotal, estimatedTotal } from "../utils/cart-total-service";
 
 export default class OrderDetailsComponent extends Component{
-
   render(){
+    const {cart} = this.props;
     return(
       <div className="col-md-8 order-details">
-        <span>Enter Promotion Code</span>
-        <input type="text" className="" />
-        <button className="btn btn-plain">APPLY</button>
+        <div className="row">
+          <label className="col-md-6 text-left">Enter Promotion Code</label>
+          <input type="text" className="col-md-4 text-right" />
+          <button className="btn btn-plain text-right">APPLY</button>
+        </div>
         <hr className="thick-line"/>
         <br/>
         <div className="row">
           <label className="col-md-8">SUBTOTAL</label>
-          <label className="col-md-4 text-right">$37.00</label>
+          <label className="col-md-4 text-right">${calcSubTotal(cart)}</label>
         </div>
         <div className="row">
           <label className="col-md-8">Promotion Code <strong>JF10</strong> Applied</label>
-          <label className="col-md-4 text-right">-$7.00</label>
+          <label className="col-md-4 text-right">-${discountTotal(cart)}</label>
         </div>
         <div className="row">
           <label className="col-md-8">Estimate Shipping*</label>
@@ -27,7 +30,7 @@ export default class OrderDetailsComponent extends Component{
         <hr/>
         <div className="row">
           <label className="col-md-8">ESTIMATED TOTAL</label>
-          <label className="col-md-4 text-right">$30.00</label>
+          <label className="col-md-4 text-right">${estimatedTotal(cart)}</label>
           <label className="col-md-8">Tax will be applied during checkout</label>
         </div>
         <hr className="thick-line"/>

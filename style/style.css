@@ -20,7 +20,7 @@ body{
 .prod-image{
   /* width: 100% */
 }
-.cart-product label{
+.cart-product label, .product-details label{
   display: block !important;
   margin: 0;
 }
@@ -58,9 +58,10 @@ body{
 }
 
 .modal-dialog{
-  width: 400px;
+  width: 70% !important;
   margin: 175px auto !important;
   outline: 0;
+  max-width: 60% !important;
 }
 
 .modal-body{

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class ProductRowComponent extends Component{
 
   render(){
-    const {cart} = this.props;
+    const {cart, onEditClick} = this.props;
 
     return(
       <div className="cart-product row">
@@ -15,7 +15,7 @@ export default class ProductRowComponent extends Component{
         <label className="sub-title">Style #: <span className="title">{cart.p_style}</span></label>
         <label className="sub-title">Colour: {cart.p_selected_color.name}</label>
         <div className="action-buttons">
-          <a>EDIT</a>
+          <a onClick={() => onEditClick(cart)}>EDIT</a>
           <a>REMOVE</a>
           <a>SAVE FOR LATER</a>
         </div>

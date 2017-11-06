@@ -1,42 +1,55 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import _ from 'lodash';
-import { fetchCart } from '../actions';
+import { fetchCart, updateShoppingBag } from '../actions';
 import { Link } from "react-router";
-// import { Modal, ModalHeader, ModalTitle, ModalClose, ModalBody, ModalFooter } from "react-modal-bootstrap";
+import { Modal, ModalHeader, ModalTitle, ModalClose, ModalBody, ModalFooter } from "react-modal-bootstrap";
 import ProductHeaderComponent from './product-header.component';
 import ProductRowComponent from './product-row.component';
 import HelpLineComponent from './help-line.component';
 import OrderDetailsComponent from './order-details.component';
 import FooterComponent from './footer.component';
+import ModalDetailsComponent from './modal/modal-details.component';
+
 class ShoppingBag extends Component {
 
   state = {
     isModalOpen: false,
-    popupContent: null,
-    popupFooter: null
+    prodId: null,
+    data: null,
+    carts: this.props.carts ? this.props.carts : ''
   }
   
   componentDidMount() {
     this.props.fetchCart();
-    // this.setState({
-    //   isModalOpen: true,
-    //   popupFooter: 'test',
-    //   popupContent: 'vjvjvjvjv'
-    // })
-    
+    this.onEditClick = this.onEditClick.bind(this);
+  }
+
+  componentWillReceiveProps(nextProps){
+    this.setState({
+      carts: nextProps.carts
+    });
+  }
+
+  onEditClick(data) {
+    if(data != null){
+      this.setState({
+        prodId: data.p_id,
+        isModalOpen: true,
+        data
+      });
+    }
   }
 
   renderPosts() {
-    const {data, status, statusText} = this.props.carts;
+    const {data, status, statusText} = this.state.carts;
     if(!data){
       return null;
     }
-    console.log('cart', data.productsInCart);
-    return _.map(data.productsInCart, cart => {
+    // console.log('cart', data.productsInCart);
+    return data.productsInCart.map(cart => {
       return (
         <li className="list-group-item" key={cart.p_id}>
-          <ProductRowComponent cart={cart} />
+          <ProductRowComponent cart={cart} onEditClick={this.onEditClick} />
         </li>
       );
     });
@@ -47,17 +60,20 @@ class ShoppingBag extends Component {
   }
 
   render() {
+    const { propId, data, isModalOpen } = this.state;
+
     return (
       <div>
-        {/* <Modal isOpen={true} onRequestHide={this.hideModal.bind(this)} style={{ width: "400px" }} >
+        <Modal isOpen={isModalOpen} onRequestHide={this.hideModal.bind(this)}>
           <ModalHeader>
             <ModalClose onClick={this.hideModal.bind(this)} />
           </ModalHeader>
           <ModalBody>
-            {this.state.popupContent}
+            <ModalDetailsComponent cart={data} hideModal={this.hideModal.bind(this)}/>
           </ModalBody>
-          {this.state.popupFooter}
-        </Modal> */}
+          <ModalFooter>
+          </ModalFooter>
+        </Modal>
         <h3 className="header">Shopping Bag</h3>
         <hr/>
         <ProductHeaderComponent />
@@ -72,9 +88,8 @@ class ShoppingBag extends Component {
           <HelpLineComponent />
           <OrderDetailsComponent />
         </div>
-        <br/><br/>
         <FooterComponent />
-        <br/><br/><br/>
+        <br/><br/>
       </div>
     );
   }
@@ -84,4 +99,4 @@ class ShoppingBag extends Component {
 function mapStateToProps(state) {
   return { carts: state.cart };
 }
-export default connect(mapStateToProps, { fetchCart })(ShoppingBag);
+export default connect(mapStateToProps, { fetchCart, updateShoppingBag })(ShoppingBag);

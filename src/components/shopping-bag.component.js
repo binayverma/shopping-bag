@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { fetchCart, updateShoppingBag } from '../actions';
 import { Link } from "react-router";
 import { Modal, ModalHeader, ModalTitle, ModalClose, ModalBody, ModalFooter } from "react-modal-bootstrap";
+import priceUtils  from "../utils/cart-total-service";
 import ProductHeaderComponent from './product-header.component';
 import ProductRowComponent from './product-row.component';
 import HelpLineComponent from './help-line.component';
@@ -61,10 +62,13 @@ class ShoppingBag extends Component {
 
   render() {
     const { propId, data, isModalOpen, carts, itemCount } = this.state;
+    
     if(!carts.data){
       return null;
     }
-    const cart = carts.data.productsInCart;
+    let cart = carts.data.productsInCart;
+
+    const {subTotal, discount, estimatedTotal} = priceUtils(cart);
 
     return (
       <div>
@@ -80,7 +84,7 @@ class ShoppingBag extends Component {
         <hr className="thick-line"/>
         <div className="order-summary row">
           <HelpLineComponent />
-          <OrderDetailsComponent cart={cart}/>
+          <OrderDetailsComponent subTotal={subTotal} discountTotal={discount} estimatedTotal={estimatedTotal}/>
         </div>
         <FooterComponent />
         <br/><br/>

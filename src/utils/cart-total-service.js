@@ -7,7 +7,7 @@ const calcSubTotal = (cart) => {
   
 }
 
-const discountTotal = (cart) => {
+const calcDiscountTotal = (cart) => {
   const subtotal = calcSubTotal(cart);
   const itemCount = cart.length;
   if(itemCount == 3)
@@ -21,12 +21,16 @@ const discountTotal = (cart) => {
   
 }
 
-const estimatedTotal = (cart) => {
-  return calcSubTotal(cart) - discountTotal(cart);
+const calcEstimatedTotal = (cart) => {
+  return calcSubTotal(cart) - calcDiscountTotal(cart);
 }
 
-export {
-  calcSubTotal,
-  discountTotal,
-  estimatedTotal
+const priceUtils = (cart) => {
+  return {
+    subTotal: calcSubTotal(cart),
+    discount: calcDiscountTotal(cart),
+    estimatedTotal: calcEstimatedTotal(cart)
+  }
 }
+
+export default priceUtils;

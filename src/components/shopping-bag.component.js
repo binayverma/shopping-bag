@@ -73,7 +73,7 @@ class ShoppingBag extends Component {
     return (
       <div>
         <h3 className="header">Shopping Bag</h3>
-        <hr/>
+        <hr className="mobile-hide"/>
         <ProductHeaderComponent itemCount={cart.length}/>
         <hr className="thick-line"/>
         <div className="product-row">

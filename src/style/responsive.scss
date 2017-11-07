@@ -1,0 +1,71 @@
+/* Responsive CSS for Mobile and tablet Device */
+@media (max-width: 991px) {
+  .header {
+    font-size: 24px;
+    margin: 20px 0;
+    letter-spacing: 4px; 
+  }
+  
+  .mobile-hide{
+    display: none;
+  }
+
+  .mobile-show {
+    display: block;
+  }
+
+  .product-header {
+    div:first-child{
+      text-align: center;
+    }
+  }
+
+  .title-name{
+    font-weight: 500;
+    font-size: 14px;;
+  }
+
+  .sub-title{
+    font-size: 12px;
+  }
+
+  .order-details{
+    .checkout {
+      text-align: center;
+      button {
+        width: 100% !important;
+      }
+    }
+    .coupon, .title {
+      text-align: center;
+    }
+  }
+
+  .footer {
+    .secure-message{
+      text-align: center;
+      p {
+        display: block;
+      }
+    }
+    .signin{
+      text-align: left;
+    }
+  }
+
+  .product-modal {
+    margin: 10% auto !important;
+    .price {
+      font-size: 36px;
+      margin-bottom: 25px; 
+      font-weight: 400;
+    }
+    img {
+      margin-top: 30px;
+      min-width: 50%; 
+    }
+  }
+  .order-summary {
+    margin-top: 25px; 
+  }
+}

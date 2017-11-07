@@ -5,7 +5,6 @@
 
 # build folder
 /build
-bundle.js
 
 # testing
 /coverage

@@ -4,7 +4,7 @@ export default class HelpLineComponent extends Component{
 
   render(){
     return(
-      <div className="col-md-4 help-line">
+      <div className="col-md-4 help-line mobile-hide">
         <div>
           <label>Need help</label>
           <label>or have questions?</label>
@@ -14,12 +14,10 @@ export default class HelpLineComponent extends Component{
           <label>1-800-555-5555</label>
         </div>
         <div>
-          <label><a>Chat with one of</a></label>
-          <label><a>our stttylists</a></label>
+          <label><a>Chat with one of<br/>our stttylists</a></label>
         </div>
         <div>
-          <label><a>See return</a></label>
-          <label><a>& echnage policy</a></label>
+          <label><a>See return<br/>& exchnage policy</a></label>
         </div>
       </div>
     );

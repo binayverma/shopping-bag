@@ -38,13 +38,12 @@ class ModalDetailsComponent extends Component{
     return(
       <div className="product-modal row">
         <div className="col-md-6">
-
-        <hr className="thick-line"/>
+          <hr className="thick-line"/>
           <div className="left">
           <label className="title-name">{cart.p_variation} {cart.p_name}</label>
             <label className="price">
               {cart.c_currency}
-              {parseInt(cart.p_price).toFixed(2)}
+              {parseFloat(cart.p_price).toFixed(2)}
             </label>
             <label className="title">{cart.p_variation}</label>
                 {
@@ -72,7 +71,7 @@ class ModalDetailsComponent extends Component{
               </select>
               </div>
             </div>
-            <button className="btn btn-primary title" onClick={() => { this.updateCart(cart.p_id, sizeValue, quantity) }}>Edit</button>
+            <button className="btn-main title" onClick={() => { this.updateCart(cart.p_id, sizeValue, quantity) }}>Edit</button>
             <label><a>See product details</a></label>
           </div>
         </div>

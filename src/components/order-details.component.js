@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { calcSubTotal, discountTotal, estimatedTotal } from "../utils/cart-total-service";
 
 export default class OrderDetailsComponent extends Component{
 

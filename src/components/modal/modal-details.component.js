@@ -36,11 +36,11 @@ class ModalDetailsComponent extends Component{
     const sizeValue = this.state.size ? this.state.size : cart.p_selected_size.code;
     const quantity = this.state.quanity;
     return(
-      <div className="container product-modal row">
+      <div className="product-modal row">
         <div className="col-md-6">
 
         <hr className="thick-line"/>
-          <div className="container left">
+          <div className="left">
           <label className="title-name">{cart.p_variation} {cart.p_name}</label>
             <label className="price">
               {cart.c_currency}
@@ -77,7 +77,7 @@ class ModalDetailsComponent extends Component{
           </div>
         </div>
         <div className="col-md-6 right">
-          <img src={`../../../assests/images/T${cart.p_id}.jpg`} />
+          <img src={`./assets/images/T${cart.p_id}.jpg`} />
         </div>
       </div>
     );

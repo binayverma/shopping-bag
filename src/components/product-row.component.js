@@ -8,7 +8,7 @@ export default class ProductRowComponent extends Component{
     return(
       <div className="cart-product row">
       <div className="prod-image col-md-2">
-        <img src={`../../assests/images/T${cart.p_id}.jpg`} />
+        <img src={`./assets/images/T${cart.p_id}.jpg`} />
       </div>
       <div className="col-md-7">
         <label className="title-name">{cart.p_variation} {cart.p_name}</label>
@@ -20,7 +20,7 @@ export default class ProductRowComponent extends Component{
           <a>SAVE FOR LATER</a>
         </div>
       </div>
-      <hr/>
+      
       <div className="col-md-1">
         <label className="title">{cart.p_selected_size.code}</label>
       </div>

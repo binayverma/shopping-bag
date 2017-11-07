@@ -6,7 +6,7 @@ export default class FooterComponent extends Component{
     return(
       <div className="footer text-right">
         <p>
-          <img src={`../../assests/images/lock.jpg`} />
+          <img src={`./assets/images/lock.jpg`} />
           Secure checkout. Shopping is always safe & secure
         </p>
       </div>

@@ -3,7 +3,7 @@ import axios from 'axios';
 export const FETCH_CART = 'fetch_cart';
 export const UPDATE_ITEM_CART = 'update_item_cart';
 
-const ROOT_URL = '../../cart.json';
+const ROOT_URL = './assets/cart.json';
 
 export function fetchCart() {
   const request = axios.get(`${ROOT_URL}`);

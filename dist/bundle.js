@@ -26056,7 +26056,7 @@
 	exports.i(__webpack_require__(239), "");
 
 	// module
-	exports.push([module.id, "body {\n  color: #666666 !important; }\n\n.header {\n  font-weight: 100;\n  text-align: center;\n  text-transform: uppercase;\n  font-size: 48px;\n  margin: 20px 0;\n  margin-bottom: 50px;\n  font-family: lato;\n  letter-spacing: 4px; }\n\n.title-name {\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 18px; }\n\n.prod-image {\n  /* width: 100% */ }\n\n.cart-product label, .product-modal label {\n  display: block !important;\n  margin: 0; }\n\n.product-modal .left {\n  /* margin: 30px 0;s */\n  width: 80%;\n  margin: 0 auto; }\n\n.product-modal .price {\n  font-size: 48px;\n  margin-bottom: 30px; }\n\n.product-modal img {\n  margin-top: 20%;\n  min-width: 50%; }\n\n.product-modal button {\n  width: 100%;\n  margin: 25px 0; }\n\n.product-modal div.color-box {\n  width: 20px;\n  height: 20px;\n  display: inline-block;\n  margin: 4px;\n  border: 1px solid #ddd; }\n\n.help-line label {\n  display: block !important;\n  margin: 0; }\n\n.help-line div, .order-details div {\n  margin-bottom: 15px; }\n\n.help-line div:first-child {\n  font-weight: 900; }\n\n.help-line a,\n.order-summary a,\n.product-modal a {\n  text-decoration: underline !important; }\n\n.title {\n  text-transform: uppercase; }\n\n.action-buttons {\n  margin-top: 40px; }\n\n.action-buttons a:after {\n  margin: 0 10px;\n  content: \"|\"; }\n\n.thick-line {\n  border: none;\n  height: 5px;\n  color: #ddd;\n  /* old IE */\n  background-color: #ddd;\n  /* Modern Browsers */ }\n\n.order-summary {\n  margin-top: 60px; }\n\n.modal-dialog {\n  width: 60% !important;\n  margin: 175px auto !important;\n  outline: 0;\n  max-width: 60% !important; }\n\n.modal-body {\n  padding-top: 20px;\n  text-align: center;\n  padding-bottom: 30px; }\n\n.modal-header {\n  border: none;\n  padding: 5px 8px 8px 8px; }\n\n.modal-footer {\n  border: none;\n  text-align: center;\n  padding-top: 0;\n  padding-bottom: 40px; }\n\n.close:before {\n  content: 'x'; }\n\n.close span {\n  display: none; }\n", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Roboto', sans-serif;\n  color: #666666; }\n\n.header {\n  font-weight: 100;\n  text-align: center;\n  text-transform: uppercase;\n  font-size: 48px;\n  margin: 30px 0;\n  letter-spacing: 4px; }\n\n.title-name {\n  text-transform: uppercase;\n  font-weight: 500;\n  font-size: 18px;\n  margin-bottom: 10px !important; }\n\n.sub-title {\n  font-weight: 300; }\n\nbutton {\n  height: 40px;\n  letter-spacing: 2px;\n  padding: 0 20px; }\n  button.btn-white {\n    background: #ffffff;\n    border: 2px solid #ccc; }\n  button.btn-white:hover {\n    background: #ddd; }\n  button.btn-main {\n    background: #1b75bb;\n    border: none;\n    color: #ffffff; }\n  button.btn-main:hover {\n    background: #155d95; }\n\nlabel {\n  display: block !important;\n  margin: 0;\n  font-weight: normal; }\n\n.list-group-item {\n  border-right: none;\n  border-left: none; }\n  .list-group-item:first-child {\n    border-top: none; }\n  .list-group-item:last-child {\n    border-bottom: none; }\n\n.product-modal .left {\n  width: 80%;\n  margin: 0 auto; }\n\n.product-modal .price {\n  font-size: 48px;\n  margin-bottom: 30px;\n  font-weight: 400; }\n\n.product-modal img {\n  margin-top: 20%;\n  min-width: 50%; }\n\n.product-modal button {\n  width: 100%;\n  margin: 25px 0; }\n\n.product-modal div.color-box {\n  width: 20px;\n  height: 20px;\n  display: inline-block;\n  margin: 4px;\n  border: 1px solid #ddd; }\n\n.help-line div {\n  margin-bottom: 15px;\n  font-weight: 300; }\n\n.help-line div:first-child label {\n  font-weight: 700 !important; }\n\n.order-details div {\n  margin-bottom: 15px; }\n\n.order-details input {\n  height: 39px;\n  border: 1px solid #ccc;\n  margin-right: 10px;\n  width: 60%; }\n\n.order-details .coupon {\n  text-align: right; }\n\n.order-details button {\n  float: right; }\n\na {\n  text-decoration: underline !important;\n  cursor: pointer;\n  color: #666666; }\n\n.title {\n  text-transform: uppercase; }\n\n.action-buttons {\n  margin-top: 40px; }\n  .action-buttons a:not(:last-child):after {\n    margin: 0 15px;\n    content: \"|\"; }\n  .action-buttons a {\n    text-decoration: none !important; }\n  .action-buttons.mobile-show {\n    text-align: center; }\n  .action-buttons.mobile-hide {\n    padding-left: 0; }\n\n.cart-product .price, .order-details .price {\n  font-size: 18px; }\n\n.cart-product .total-price, .order-details .total-price {\n  font-size: 24px; }\n\n.thick-line {\n  border: none;\n  height: 5px;\n  color: #ddd;\n  background-color: #ddd; }\n\n.order-summary {\n  margin-top: 50px; }\n\n.modal-dialog {\n  margin: 5% auto !important;\n  outline: 0; }\n\n.modal-body {\n  padding-top: 20px;\n  text-align: center;\n  padding-bottom: 30px; }\n\n.modal-header {\n  border: none;\n  padding: 5px 8px 8px 8px; }\n\n.modal-footer {\n  border: none;\n  text-align: center;\n  padding-top: 0;\n  padding-bottom: 40px; }\n\n.close:before {\n  content: 'x'; }\n\n.close span {\n  display: none; }\n\n.product-header .item-count {\n  padding-left: 15px; }\n\n.product-header div {\n  padding-left: 0; }\n\n.mobile-hide {\n  display: block; }\n\n.mobile-show {\n  display: none; }\n\n.text-capitalize {\n  text-transform: capitalize; }\n\n.footer .secure-message {\n  text-align: right; }\n  .footer .secure-message p {\n    display: inline; }\n\n.signature {\n  color: #a3a3a3;\n  font-size: 12px;\n  text-align: right;\n  font-weight: 400;\n  letter-spacing: 1px; }\n  .signature a {\n    color: #155d95;\n    cursor: pointer; }\n\n/* Responsive CSS for Mobile and tablet Device */\n@media (max-width: 991px) {\n  .header {\n    font-size: 24px;\n    margin: 20px 0;\n    letter-spacing: 4px; }\n  .mobile-hide {\n    display: none; }\n  .mobile-show {\n    display: block; }\n  .product-header div:first-child {\n    text-align: center; }\n  .title-name {\n    font-weight: 500;\n    font-size: 14px; }\n  .sub-title {\n    font-size: 12px; }\n  .order-details .checkout {\n    text-align: center; }\n    .order-details .checkout button {\n      width: 100% !important; }\n  .order-details .coupon, .order-details .title {\n    text-align: center; }\n  .footer .secure-message {\n    text-align: center; }\n    .footer .secure-message p {\n      display: block; }\n  .footer .signin {\n    text-align: left; }\n  .product-modal {\n    margin: 10% auto !important; }\n    .product-modal .price {\n      font-size: 36px;\n      margin-bottom: 25px;\n      font-weight: 400; }\n    .product-modal img {\n      margin-top: 30px;\n      min-width: 50%; }\n  .order-summary {\n    margin-top: 25px; } }\n", ""]);
 
 	// exports
 
@@ -26816,7 +26816,7 @@
 	          { className: 'header' },
 	          'Shopping Bag'
 	        ),
-	        _react2.default.createElement('hr', null),
+	        _react2.default.createElement('hr', { className: 'mobile-hide' }),
 	        _react2.default.createElement(_productHeader2.default, { itemCount: cart.length }),
 	        _react2.default.createElement('hr', { className: 'thick-line' }),
 	        _react2.default.createElement(
@@ -36707,17 +36707,17 @@
 	  cart.map(function (item) {
 	    return subtotal += item.p_quantity * item.p_price;
 	  });
-	  return subtotal;
+	  return parseFloat(subtotal).toFixed(2);
 	};
 
 	var calcDiscountTotal = function calcDiscountTotal(cart) {
 	  var subtotal = calcSubTotal(cart);
 	  var itemCount = cart.length;
-	  if (itemCount == 3) return subtotal * 0.5;else if (itemCount > 3 && itemCount <= 10) return subtotal * 0.10;else if (itemCount > 10) return subtotal * 0.25;else return 0;
+	  if (itemCount == 3) return parseFloat(subtotal * 0.5).toFixed(2);else if (itemCount > 3 && itemCount <= 10) return parseFloat(subtotal * 0.10).toFixed(2);else if (itemCount > 10) return parseFloat(subtotal * 0.25).toFixed(2);else return parseFloat(0).toFixed(2);
 	};
 
 	var calcEstimatedTotal = function calcEstimatedTotal(cart) {
-	  return calcSubTotal(cart) - calcDiscountTotal(cart);
+	  return parseFloat(calcSubTotal(cart) - calcDiscountTotal(cart)).toFixed(2);
 	};
 
 	var priceUtils = function priceUtils(cart) {
@@ -36771,24 +36771,28 @@
 	        { className: "product-header row" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "col-md-9 title" },
+	          { className: "col-md-9 title item-count" },
 	          this.props.itemCount,
 	          " ITEMS"
 	        ),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "col-md-1 title" },
-	          "SIZE"
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-md-1 title" },
-	          "QTY"
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-md-1 title" },
-	          "PRICE"
+	          { className: "mobile-hide" },
+	          _react2.default.createElement(
+	            "div",
+	            { className: "col-md-1 title" },
+	            "SIZE"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "col-md-1 title" },
+	            "QTY"
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "col-md-1 title" },
+	            "PRICE"
+	          )
 	        )
 	      );
 	    }
@@ -36845,12 +36849,12 @@
 	        { className: "cart-product row" },
 	        _react2.default.createElement(
 	          "div",
-	          { className: "prod-image col-md-2" },
+	          { className: "prod-image col-md-2 col-xs-6" },
 	          _react2.default.createElement("img", { src: "./assets/images/T" + cart.p_id + ".jpg" })
 	        ),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "col-md-7" },
+	          { className: "col-md-7 col-xs-6" },
 	          _react2.default.createElement(
 	            "label",
 	            { className: "title-name" },
@@ -36870,13 +36874,39 @@
 	          ),
 	          _react2.default.createElement(
 	            "label",
-	            { className: "sub-title" },
+	            { className: "sub-title text-capitalize" },
 	            "Colour: ",
 	            cart.p_selected_color.name
 	          ),
 	          _react2.default.createElement(
 	            "div",
-	            { className: "action-buttons" },
+	            { className: "mobile-show" },
+	            _react2.default.createElement(
+	              "label",
+	              { className: "sub-title" },
+	              "Size: ",
+	              _react2.default.createElement(
+	                "span",
+	                { className: "title" },
+	                cart.p_selected_size.code
+	              )
+	            ),
+	            _react2.default.createElement(
+	              "label",
+	              { className: "sub-title" },
+	              "QTY: ",
+	              cart.p_quantity
+	            ),
+	            _react2.default.createElement(
+	              "label",
+	              { className: "price" },
+	              cart.c_currency,
+	              parseFloat(cart.p_price * cart.p_quantity).toFixed(2)
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "col-md-7 col-xs-12 action-buttons mobile-hide" },
 	            _react2.default.createElement(
 	              "a",
 	              { onClick: function onClick() {
@@ -36898,30 +36928,55 @@
 	        ),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "col-md-1" },
+	          { className: "col-md-3 col-xs-12 action-buttons mobile-show" },
 	          _react2.default.createElement(
-	            "label",
-	            { className: "title" },
-	            cart.p_selected_size.code
+	            "a",
+	            { onClick: function onClick() {
+	                return onEditClick(cart);
+	              } },
+	            "EDIT"
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            null,
+	            "REMOVE"
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            null,
+	            "SAVE FOR LATER"
 	          )
 	        ),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "col-md-1" },
+	          { className: "mobile-hide" },
 	          _react2.default.createElement(
-	            "label",
-	            null,
-	            cart.p_quantity
-	          )
-	        ),
-	        _react2.default.createElement(
-	          "div",
-	          { className: "col-md-1" },
+	            "div",
+	            { className: "col-md-1" },
+	            _react2.default.createElement(
+	              "label",
+	              { className: "title" },
+	              cart.p_selected_size.code
+	            )
+	          ),
 	          _react2.default.createElement(
-	            "label",
-	            null,
-	            cart.c_currency,
-	            parseInt(cart.p_price * cart.p_quantity).toFixed(2)
+	            "div",
+	            { className: "col-md-1 " },
+	            _react2.default.createElement(
+	              "label",
+	              null,
+	              cart.p_quantity
+	            )
+	          ),
+	          _react2.default.createElement(
+	            "div",
+	            { className: "col-md-1 " },
+	            _react2.default.createElement(
+	              "label",
+	              { className: "price" },
+	              cart.c_currency,
+	              parseFloat(cart.p_price * cart.p_quantity).toFixed(2)
+	            )
 	          )
 	        )
 	      );
@@ -36971,7 +37026,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "col-md-4 help-line" },
+	        { className: "col-md-4 help-line mobile-hide" },
 	        _react2.default.createElement(
 	          "div",
 	          null,
@@ -37009,15 +37064,8 @@
 	            _react2.default.createElement(
 	              "a",
 	              null,
-	              "Chat with one of"
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "label",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              null,
+	              "Chat with one of",
+	              _react2.default.createElement("br", null),
 	              "our stttylists"
 	            )
 	          )
@@ -37031,16 +37079,9 @@
 	            _react2.default.createElement(
 	              "a",
 	              null,
-	              "See return"
-	            )
-	          ),
-	          _react2.default.createElement(
-	            "label",
-	            null,
-	            _react2.default.createElement(
-	              "a",
-	              null,
-	              "& echnage policy"
+	              "See return",
+	              _react2.default.createElement("br", null),
+	              "& exchnage policy"
 	            )
 	          )
 	        )
@@ -37096,20 +37137,33 @@
 
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "col-md-8 order-details" },
+	        { className: "col-md-8 col-xs-12 order-details" },
 	        _react2.default.createElement(
 	          "div",
 	          { className: "row" },
 	          _react2.default.createElement(
-	            "label",
-	            { className: "col-md-6 text-left" },
-	            "Enter Promotion Code"
+	            "div",
+	            { className: "col-md-4" },
+	            _react2.default.createElement(
+	              "label",
+	              { className: "title" },
+	              "Enter Promotion Code"
+	            ),
+	            _react2.default.createElement(
+	              "label",
+	              { className: "title" },
+	              "or gift card"
+	            )
 	          ),
-	          _react2.default.createElement("input", { type: "text", className: "col-md-4 text-right" }),
 	          _react2.default.createElement(
-	            "button",
-	            { className: "btn btn-plain text-right" },
-	            "APPLY"
+	            "div",
+	            { className: "col-md-8 col-xs-12 coupon" },
+	            _react2.default.createElement("input", { type: "text" }),
+	            _react2.default.createElement(
+	              "button",
+	              { className: "btn-white" },
+	              "APPLY"
+	            )
 	          )
 	        ),
 	        _react2.default.createElement("hr", { className: "thick-line" }),
@@ -37119,12 +37173,12 @@
 	          { className: "row" },
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-8" },
+	            { className: "col-xs-8" },
 	            "SUBTOTAL"
 	          ),
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-4 text-right" },
+	            { className: "col-xs-4 text-right price" },
 	            "$",
 	            subTotal
 	          )
@@ -37134,7 +37188,7 @@
 	          { className: "row" },
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-8" },
+	            { className: "col-xs-8" },
 	            "Promotion Code ",
 	            _react2.default.createElement(
 	              "strong",
@@ -37145,7 +37199,7 @@
 	          ),
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-4 text-right" },
+	            { className: "col-xs-4 text-right price" },
 	            "-$",
 	            discountTotal
 	          )
@@ -37155,22 +37209,22 @@
 	          { className: "row" },
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-8" },
+	            { className: "col-xs-8" },
 	            "Estimate Shipping*"
 	          ),
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-4 text-right" },
+	            { className: "col-xs-4 text-right" },
 	            "FREE"
 	          ),
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-8" },
+	            { className: "col-xs-8 sub-title" },
 	            "You qualify for free shipping"
 	          ),
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-8" },
+	            { className: "col-xs-8 sub-title" },
 	            "because your order is over $50*"
 	          )
 	        ),
@@ -37180,34 +37234,42 @@
 	          { className: "row" },
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-8" },
+	            { className: "col-xs-8" },
 	            "ESTIMATED TOTAL"
 	          ),
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-4 text-right" },
+	            { className: "col-xs-4 text-right total-price" },
 	            "$",
 	            estimatedTotal
 	          ),
 	          _react2.default.createElement(
 	            "label",
-	            { className: "col-md-8" },
+	            { className: "col-xs-8 sub-title" },
 	            "Tax will be applied during checkout"
 	          )
 	        ),
 	        _react2.default.createElement("hr", { className: "thick-line" }),
 	        _react2.default.createElement(
 	          "div",
-	          { className: "text-right" },
+	          { className: "row checkout" },
 	          _react2.default.createElement(
-	            "a",
-	            null,
-	            "CONTINUE SHIPPING"
+	            "div",
+	            { className: "col-md-6 col-xs-12" },
+	            _react2.default.createElement(
+	              "a",
+	              null,
+	              "CONTINUE SHOPPING"
+	            )
 	          ),
 	          _react2.default.createElement(
-	            "button",
-	            { className: "btn btn-primary" },
-	            "CHECKOUT"
+	            "div",
+	            { className: "col-md-6 col-xs-12" },
+	            _react2.default.createElement(
+	              "button",
+	              { className: "btn-main" },
+	              "CHECKOUT"
+	            )
 	          )
 	        )
 	      );
@@ -37257,12 +37319,38 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        "div",
-	        { className: "footer text-right" },
+	        { className: "footer" },
 	        _react2.default.createElement(
-	          "p",
-	          null,
+	          "div",
+	          { className: "secure-message" },
 	          _react2.default.createElement("img", { src: "./assets/images/lock.jpg" }),
-	          "Secure checkout. Shopping is always safe & secure"
+	          _react2.default.createElement(
+	            "p",
+	            { className: "sub-title" },
+	            "Secure checkout. Shopping is always safe & secure"
+	          )
+	        ),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "mobile-show signin" },
+	          _react2.default.createElement("hr", null),
+	          _react2.default.createElement(
+	            "a",
+	            null,
+	            "SIGN IN"
+	          ),
+	          " to save your cart and have access to your item on mobile, tablet, and desktop."
+	        ),
+	        _react2.default.createElement("hr", null),
+	        _react2.default.createElement(
+	          "div",
+	          { className: "signature" },
+	          "Developed by ",
+	          _react2.default.createElement(
+	            "a",
+	            { href: "http://binayverma.com/", target: "_blank" },
+	            "Binay Verma"
+	          )
 	        )
 	      );
 	    }
@@ -37377,7 +37465,7 @@
 	              'label',
 	              { className: 'price' },
 	              cart.c_currency,
-	              parseInt(cart.p_price).toFixed(2)
+	              parseFloat(cart.p_price).toFixed(2)
 	            ),
 	            _react2.default.createElement(
 	              'label',
@@ -37433,7 +37521,7 @@
 	            ),
 	            _react2.default.createElement(
 	              'button',
-	              { className: 'btn btn-primary title', onClick: function onClick() {
+	              { className: 'btn-main title', onClick: function onClick() {
 	                  _this2.updateCart(cart.p_id, sizeValue, quantity);
 	                } },
 	              'Edit'

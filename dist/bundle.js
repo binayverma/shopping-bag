@@ -37439,7 +37439,6 @@
 	      }
 	      var cart = this.props.cart;
 
-	      console.log(cart);
 	      var sizes = cart.p_available_options.sizes;
 	      var colors = cart.p_available_options.colors;
 	      var sizeValue = this.state.size ? this.state.size : cart.p_selected_size.code;

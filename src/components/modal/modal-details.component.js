@@ -30,7 +30,6 @@ class ModalDetailsComponent extends Component{
       return null;
     }
     const { cart } = this.props;
-    console.log(cart);
     const sizes = cart.p_available_options.sizes;
     const colors = cart.p_available_options.colors;
     const sizeValue = this.state.size ? this.state.size : cart.p_selected_size.code;
